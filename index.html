@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="css" href="./Assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="weather">
+        <!-- ###TODO Accept user input as city or Zip code -->
+        <!-- ###TODO remove form element and add local Storage -->
+        <div id="cityInputField">
+          <!-- <label for="city">Enter City:</label> -->
+          <input type="text" id="city" name="city" required placeholder="Enter City">
+          <button id="weatherBtn" onclick="saveCity(); getWeatherAPI()">Search</button>
+        </div>
+      </section>
+      <div id="allModules">
+        <h2 id="placeholder" style="display: flex;">Enter A City In Search Bar To See Current Weather Conditions!</h2>
+        <section id="weatherBox" style="display: none;">
+          <h2 id="location">location and time</h2>
+          <div id="weatherContent">
+            <ul id="conditions">
+              <li id="temperature">temperature</li>
+              <li id="wind">wind speed</li>
+              <li id="humidity">humidity</li>
+              <li id="conditionsDescription">description</li>
+              <li><img></li>
+            </ul>
+            <p><img id="weatherGif" src=""><img></p>
+          </div>
+        </section> 
+        <script src="./Assets/script.js"></script>
+</body>
+</html>

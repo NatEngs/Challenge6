@@ -1,0 +1,109 @@
+#weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(white, skyblue); */
+    font-size: 20px;
+    height: 90px;
+}
+
+#city {
+    border-radius: 10px;
+    margin: 4px 15px;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 7px;
+    padding: 4px 10px;
+    /* max-width: 20%; */
+}
+
+#weatherBtn {
+    border-color: black;
+    border-width: 2px;
+    border-radius: 7px;
+    padding: 4px 10px;
+    background-color: rgb(0 0 0 / 7%);
+    margin: 4px;
+}
+
+#weatherBtn:hover {
+    background: linear-gradient(#49b2fe, navy);
+    color: white;
+}
+
+#weatherBox {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
+    margin: 25px 25px;
+    flex-direction: column;
+    max-width: 700px;
+    flex: 2 1 500px;
+}
+
+#placeholder {
+    display: flex;
+    align-items: center;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
+    margin: 25px;
+    flex-direction: column;
+    max-width: 400px;
+    background: linear-gradient(navy, #49b2fe);
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+#location {
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 0px;
+    background: linear-gradient(navy, #49b2fe);
+    color: white;
+    border-radius: 4px 4px 0px 0px;
+}
+
+#weatherContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#conditions {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+#weatherGif {
+    margin-top: 10px;
+    max-height: 160px;
+}
+
+#wind {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+#conditionsDescription {
+    margin-top: 14px;
+}
