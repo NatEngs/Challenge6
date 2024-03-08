@@ -3,34 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="css" href="./Assets/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Weather Dashboard</title>
 </head>
+
+<header>Weather Dashboard</header>
+
 <body>
     <section id="weather">
-        <!-- ###TODO Accept user input as city or Zip code -->
-        <!-- ###TODO remove form element and add local Storage -->
-        <div id="cityInputField">
-          <!-- <label for="city">Enter City:</label> -->
+        <h1>Search for a City:</h1> 
           <input type="text" id="city" name="city" required placeholder="Enter City">
-          <button id="weatherBtn" onclick="saveCity(); getWeatherAPI()">Search</button>
+          <button id="weatherBtn" onclick="saveCity(); weatherAPI(); displayWeather(); forecastAPI(); displayForecast()">Search</button>
         </div>
       </section>
-      <div id="allModules">
-        <h2 id="placeholder" style="display: flex;">Enter A City In Search Bar To See Current Weather Conditions!</h2>
-        <section id="weatherBox" style="display: none;">
+
+      <section>
+        <div>
+        <h2 id="placeholder">Not By A Window?  Search Your City And See Current Conditions!</h2>
+        <section id="weatherBox" style="display: none">
           <h2 id="location">location and time</h2>
           <div id="weatherContent">
             <ul id="conditions">
-              <li id="temperature">temperature</li>
-              <li id="wind">wind speed</li>
-              <li id="humidity">humidity</li>
-              <li id="conditionsDescription">description</li>
+              <li id="temperature">Temperature: </li>
+              <li id="wind">Wind: </li>
+              <li id="humidity">Humidity: </li>
+              <li id="conditionsDescription">Conditions: </li>
               <li><img></li>
             </ul>
             <p><img id="weatherGif" src=""><img></p>
           </div>
         </section> 
+
+        <!-- <section>
+            <div>
+            <div id="storedLocations">
+            <h1>Previous Locations</h1>
+            </div>
+        </section> -->
+
+        <section>
+            <h2 id="placeholder">Science's Best Guess For The Next 5 Days</h2>
+            <div id="weatherContent">
+            <section id="dayCards" style="display: none">
+                <ul id="conditions">
+                    <li id="day1Date" class="forecastDate">Date</li>
+                    <li id="day1Temp">Temp:</li>
+                    <li id="day1Humid">Humidity:</li>
+                    <li id="day1Wind">Wind:</li>
+                    <p><img id="day1Pic" src="" alt="weather icon"><img></p>
+                </ul>
+                <ul id="conditions">
+                    <li id="day2Date" class="forecastDate">Date</li>
+                    <li id="day2Temp">Temp:</li>
+                    <li id="day2Humid">Humidity:</li>
+                    <li id="day2Wind">Wind:</li>
+                    <p><img id="day2Pic" src="" alt="weather icon"><img></p>
+                </ul>
+                <ul id="conditions">
+                    <li id="day3Date" class="forecastDate">Date</li>
+                    <li id="day3Temp">Temp:</li>
+                    <li id="day3Humid">Humidity:</li>
+                    <li id="day3Wind">Wind:</li>
+                    <p><img id="day3Pic" src="" alt="weather icon"><img></p>
+                </ul>
+                <ul id="conditions">
+                    <li id="day4Date" class="forecastDate">Date</li>
+                    <li id="day4Temp">Temp:</li>
+                    <li id="day4Humid">Humidity:</li>
+                    <li id="day4Wind">Wind:</li>
+                    <p><img id="day4Pic" src="" alt="weather icon"><img></p>
+                </ul>
+                <ul id="conditions">
+                    <li id="day5Date" class="forecastDate">Date</li>
+                    <li id="day5Temp">Temp:</li>
+                    <li id="day5Humid">Humidity:</li>
+                    <li id="day5Wind">Wind:</li>
+                    <p><img id="day5Pic" src="" alt="weather icon"><img></p>
+                </ul>
+            </section>
+            </div>
+        </section>
+
         <script src="./Assets/script.js"></script>
 </body>
 </html>
