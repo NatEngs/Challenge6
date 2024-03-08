@@ -69,11 +69,7 @@ function weatherAPI() {
             var weatherDescriptionId = data.weather[0].description;
 
             cityDescription.textContent = "Conditions: " + weatherDescriptionId;
-
-// **********Display the current conditions on weatherAPI function in html*********
-            // weatherBox.style.display = 'flex'
-            // weatherPlaceholder.style.display = 'none'
-            
+         
 
             // **********Swapping pre-populated weather symbol with fun gif**********
             var weatherID = data.weather[0].icon;
