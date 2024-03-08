@@ -1,20 +1,44 @@
-#weather {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./weather_gifs/weather\ background2.jpg.);
+    background-size: cover;
+    justify-content: space-around; 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: linear-gradient(white, skyblue); */
-    font-size: 20px;
-    height: 90px;
+    flex-direction: column;
+}
+header {
+    background: linear-gradient(to right, rgb(132, 132, 155), rgb(0, 0, 98));
+    color: whitesmoke;
+    font-weight: bolder;
+    text-align: right;
+    padding: 5px;
+    width: 100vw;
+    text-indent: 10px;
+    border-style: solid;
+    border-radius: 4px 4px 0px 0px;
+    border-width: 2px;
+    font-size: 30px;
+}
+
+#weather {
+    display: block;
+    float: left;
+    width: 80vw;
+    align-items: left;
+    font-size: 16px;
+    height: 10vw;
+    padding: 5px;
 }
 
 #city {
     border-radius: 10px;
-    margin: 4px 15px;
     border-color: black;
     border-width: 2px;
     border-radius: 7px;
     padding: 4px 10px;
-    /* max-width: 20%; */
 }
 
 #weatherBtn {
@@ -27,33 +51,31 @@
 }
 
 #weatherBtn:hover {
-    background: linear-gradient(#49b2fe, navy);
+    background: linear-gradient(to right, rgb(132, 132, 155), rgb(0, 0, 98));
     color: white;
 }
 
 #weatherBox {
     display: flex;
-    /* justify-content: space-evenly; */
+    float: right;
+    max-width: 100vw;
     align-items: center;
-    border-color: black;
-    border-width: 3px;
-    border-radius: 10px;
-    margin: 25px 25px;
+    margin: 5px;
     flex-direction: column;
-    max-width: 700px;
-    flex: 2 1 500px;
+    list-style-type: none;
 }
 
 #placeholder {
     display: flex;
     align-items: center;
-    border-color: black;
-    border-width: 3px;
-    border-radius: 10px;
-    margin: 25px;
+    border-style: solid;
+    border-radius: 4px 4px 0px 0px;
+    border-width: 2px;
+    font-size: 30px;
     flex-direction: column;
-    max-width: 400px;
-    background: linear-gradient(navy, #49b2fe);
+    width: 100vw;
+    height: 20%;
+    background: linear-gradient(to right, rgb(132, 132, 155), rgb(0, 0, 98));
     font-size: 30px;
     color: white;
     font-weight: bold;
@@ -69,7 +91,7 @@
     font-size: 30px;
     font-weight: bold;
     padding: 5px 0px;
-    background: linear-gradient(navy, #49b2fe);
+    background: linear-gradient(to right, rgb(132, 132, 155), rgb(0, 0, 98));
     color: white;
     border-radius: 4px 4px 0px 0px;
 }
@@ -79,6 +101,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100vw;
 }
 
 #conditions {
@@ -94,11 +117,6 @@
     padding: 5px;
 }
 
-#weatherGif {
-    margin-top: 10px;
-    max-height: 160px;
-}
-
 #wind {
     margin-top: 14px;
     margin-bottom: 14px;
@@ -106,4 +124,43 @@
 
 #conditionsDescription {
     margin-top: 14px;
+}
+
+#storedLocations {
+    display: block;
+    float: left;
+    width: 29%;
+    align-items: left;
+    font-size: 16px;
+    height: 40%;
+}
+
+.forecastDate {
+    font-weight: bold;
+}
+
+#dayCards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#dayCards ul {
+    border: 3px solid black;
+    border-radius: 2px;
+    margin-left: 3px;
+    padding-bottom: 10px;
+    padding-top: 10px
+}
+
+#dayCards li {
+list-style-type: none;
+padding-right: 25px;
+}
+
+img {
+    max-height: 250px;
+    max-width: 250px;
 }
